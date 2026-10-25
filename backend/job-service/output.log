@@ -1,0 +1,1 @@
+2026/10/20 12:01:44 Failed to migrate:failed to connect to `host=localhost user=postgres database=freelance `: server error (FATAL: database "freelance " does not exist (SQLSTATE 3D000))

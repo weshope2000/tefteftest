@@ -1,0 +1,8 @@
+.registerContainer {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.error {
+  color: red;
+}

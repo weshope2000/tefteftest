@@ -1,0 +1,11 @@
+# Environment files
+.env
+.env.*
+.env.local
+.env.*.local
+
+# Service envs
+backend/**/.env
+backend/**/.env.*
+frontend/.env.local
+frontend/.env.*

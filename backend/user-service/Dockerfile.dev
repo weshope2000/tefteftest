@@ -1,0 +1,20 @@
+# Example for job
+FROM golang:1.25-alpine
+
+WORKDIR /app
+
+RUN apk add --no-cache git
+
+# Copy the go.mod/go.sum from the correct path
+COPY services/auth/go.mod services/auth/go.sum ./
+RUN go mod download
+
+# Copy pkg if needed
+COPY pkg ./pkg
+
+# Copy service source code
+COPY services/auth ./
+
+EXPOSE 8000
+
+CMD ["go", "run", "cmd/main.go"]
